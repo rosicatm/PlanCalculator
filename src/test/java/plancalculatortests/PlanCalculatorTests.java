@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PlanCalculatorTests extends BaseClass {
     private static final String X_WAY_UNITS = " X Way Units";
 
-    //The following tests cover all plans with their extended names.
+    // The following tests cover all plans with their extended names.
     // Unit metric is set to "METRIC" as there is an issue with the calculations for "IMPERIAL"
 
     @Test
@@ -21,8 +21,8 @@ public class PlanCalculatorTests extends BaseClass {
         // Selecting unit metric
         calculatorPage.selectMetric(METRIC_OPTION);
 
-        // Setting Road Length (not very accurate calculation)
-        // First issue is that if I set the road length to 140, the thumb is going to 143
+        // Setting Road Length
+        // There is an issue that if the road length is set to 140, the thumb is setting it to 143
         // Unit metric option needs to be added as a parameter in order to calculate the right value for metric or imperial
 
         calculatorPage.setRoadLength(140, METRIC_OPTION);
